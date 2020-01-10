@@ -1,0 +1,18 @@
+
+SELECT 
+				FL.facility_id,
+				FL.facility_name_en
+				,LKFC.category_name_en
+				,LKFS.speciality_name_en
+				FROM facility_license  FL
+join			facility_category_master  LKFC
+
+on				LKFC.facility_category_code=FL.facility_category_code 
+				and LKFC.is_active=1
+join			facility_category_speciality_master_bridge  LKFCS
+on				FL.facility_category_code=LKFCS.facility_category_code  and  LKFCS.is_active=1 
+join            facility_speciality_master    LKFS
+ON  LKFCS.facility_speciality_code=LKFS.facility_speciality_code and LKFS.is_active=1
+WHERE  FL.is_active=1  AND FL.facility_id='5248645'
+
+
