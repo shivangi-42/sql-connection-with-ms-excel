@@ -1,0 +1,15 @@
+Steps to connect the sql-server with database
+
+1::
+data->from databases-> from sql server databases
+
+2::
+do the connection and the tables 
+ 3:: 
+ go for the recent scources and connect your scource
+ 
+ 4:: will get all the tables from the databases click on edit
+ 
+ 5:: the power shell will open on the right side click on star like button
+ 
+ 6:: you will get the connection by default and on clicking advance setting you will the query editor
